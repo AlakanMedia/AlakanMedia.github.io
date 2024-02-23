@@ -18,6 +18,8 @@ a {
     text-decoration: none;
 }
 
+/* CSS para el NAVBAR */
+
 nav {
     width: 100%;
     position: fixed;
@@ -84,7 +86,7 @@ ul li a:hover {
     color: var(--secondary-color);
 }
 
-@media (width < 750px) {
+@media (width < 510px) {
     nav .checkbox {
 	display: block;
     }
@@ -108,4 +110,63 @@ ul li a:hover {
     ul li a {
 	font-size: 1.25rem;
     }
+}
+
+/* CSS para la sección HOME */
+
+.home {
+    background-color: #282828;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.home .card_content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (width <= 510px) {
+    .home .card_content {
+	flex-direction: column;
+	text-align: center;
+    }
+}
+
+.home .card_content img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+}
+
+.home .card_content .info_content {
+    margin: 10px 16px;
+}
+
+.home .card_content .info_content .socials {
+    margin-top: 6px;
+}
+
+.home .card_content .info_content .socials a{
+    margin-right: 6px;
+    text-align: center;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 26px;
+}
+
+.home .text_content {
+    margin: 20px;
+}
+
+.home .text_content p {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
 }
