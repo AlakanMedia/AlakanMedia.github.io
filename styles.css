@@ -1,10 +1,16 @@
 :root {
-    --primary-color: #a855f7;
-    --primary-color-dark: #9333ea;
-    --secondary-color: #ca8a04;
-    --text-dark: #1f2937;
-    --text-light: #6b7280;
-    --extra-light: #faf5ff;
+    --bg: #282828;
+	--bg-dark: #1d2021;
+    --fg: #ebdbb2;
+    --red: #cc241d;
+    --green: #98971a;
+    --yellow: #d79921;
+    --blue: #458588;
+	--blue-light: #83a598;
+	--purple: #b16286;
+	--aqua: #689d6a;
+	--gray: #a89984;
+	--orange: #d65d0e;
     --max-width: 1200px;
 }
 
@@ -25,14 +31,17 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color: var(--bg-dark);
     z-index: 99;
+	-webkit-box-shadow: 0px 7px 27px -3px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 7px 27px -3px rgba(0,0,0,1);
+	box-shadow: 0px 7px 27px -3px rgba(0,0,0,1);
 }
 
 .nav_content {
     max-width: var(--max-width);
     margin: auto;
-    padding: 1.5rem 1rem;
+    padding: 1rem .5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,12 +50,12 @@ nav {
 nav .logo a {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--primary-color);
-    transition: 0.3;
+    color: var(--blue);
+    transition: 0.4;
 }
 
 nav .logo a:hover {
-    color: var(--primary-color-dark);
+    color: var(--blue-light);
 }
 
 nav .checkbox {
@@ -59,7 +68,7 @@ nav input {
 
 nav .checkbox h1 {
     font-size: 2rem;
-    color: var(--primary-color);
+    color: var(--blue);
     cursor: pointer;
 }
 
@@ -68,7 +77,7 @@ ul {
     align-items: center;
     gap: 1rem;
     list-style: none;
-    transition: left 0.3s;
+    transition: left 0.4s;
 }
 
 ul li a {
@@ -76,50 +85,51 @@ ul li a {
     border: 2px solid transparent;
     text-decoration: none;
     font-weight: 600;
-    color: var(--text-dark);
-    transition: 0.3s;
+    color: var(--blue);
+    transition: 0.4s;
 }
 
 ul li a:hover {
-    border-top-color: var(--secondary-color);
-    border-bottom-color: var(--secondary-color);
-    color: var(--secondary-color);
+    border-top-color: var(--blue-light);
+    border-bottom-color: var(--blue-light);
+    color: var(--blue-light);
 }
 
-@media (width < 510px) {
+@media (width < 644px) {
     nav .checkbox {
-	display: block;
+		display: block;
     }
 
     ul {
 	position: absolute;
 	width: 100%;
-	height: calc(100vh - 85px);
+	height: calc(100vh - 70px);
 	left: -100%;
-	top: 85px;
-	background-color: var(--extra-light);
+	top: 70px;
+	background-color: var(--bg-dark);
 	flex-direction: column;
 	justify-content: center;
 	gap: 3rem;
     }
 
     nav #check:checked ~ ul {
-	left: 0;
+		left: 0;
     }
 
     ul li a {
-	font-size: 1.25rem;
+		font-size: 1.25rem;
     }
 }
 
 /* CSS para la sección HOME */
 
 .home {
-    background-color: #282828;
+    background-color: var(--bg);
     background-size: cover;
     height: 100vh;
     display: flex;
     align-items: center;
+	padding: 7% 14% 7% 14%;
 }
 
 .home .card_content {
@@ -130,22 +140,29 @@ ul li a:hover {
     align-items: center;
 }
 
-@media (width <= 510px) {
+@media (width <= 644px) {
     .home .card_content {
 	flex-direction: column;
 	text-align: center;
     }
 }
 
-.home .card_content img {
+.home .card_content .perfil {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    border: 4px solid #ffffff;
+    border: 4px solid var(--fg);
+	-webkit-box-shadow: 0px 0px 25px 3px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 0px 25px 3px rgba(0,0,0,1);
+	box-shadow: 0px 0px 25px 3px rgba(0,0,0,1);
 }
 
 .home .card_content .info_content {
     margin: 10px 16px;
+}
+
+.home .card_content .info_content h2 {
+	color: var(--green);
 }
 
 .home .card_content .info_content .socials {
@@ -155,7 +172,7 @@ ul li a:hover {
 .home .card_content .info_content .socials a{
     margin-right: 6px;
     text-align: center;
-    color: #ffffff;
+    color: var(--fg);
     display: inline-block;
     font-size: 26px;
 }
@@ -165,8 +182,58 @@ ul li a:hover {
 }
 
 .home .text_content p {
-    color: #ffffff;
+    color: var(--fg);
     font-size: 18px;
     line-height: 22px;
     text-align: justify;
+}
+
+/* CSS para la sección PROJECTS */
+
+.projects {
+	background-color: var(--bg);
+	padding: 7% 14% 7% 14%;
+}
+
+.projects .projects_content h1 {
+	color: var(--fg);
+	margin-bottom: 2rem;
+}
+
+.projects .projects_content .projects_list {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap;
+	gap: 20px;
+}
+
+.projects .projects_content .projects_list .project_card {
+	width: 48%;
+	padding: 2rem;
+	border: 2px solid var(--fg);
+	border-radius: 4px;
+	transition: .4s;
+}
+
+@media (width <= 744px) {
+	.projects .projects_content .projects_list .project_card {
+		width: 100%;
+	}
+}
+
+.projects .projects_content .projects_list .project_card:hover {
+	border-color: var(--purple);
+	-webkit-box-shadow: 0px 0px 25px 3px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 0px 25px 3px rgba(0,0,0,1);
+	box-shadow: 0px 0px 25px 3px rgba(0,0,0,1);
+}
+
+.projects .projects_content .projects_list .project_card .title {
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+
+.projects .projects_content .projects_list .project_card .title h4 {
+	margin-left: .6rem;
 }
