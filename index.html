@@ -5,114 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>My website</title>
+    <title>Website</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav>
-	<div class="nav_content">
-	    <div class="logo"><a href="#">J.P</a></div>
-	    <label for="check" class="checkbox">
-		<h1>=</h1>
-	    </label>
-	    <input type="checkbox" name="check" id="check">
-	    <ul>
-		<li><a href="#">Home</a></li>
-		<li><a href="#">Projects</a></li>
-		<li><a href="#">Work experience</a></li>
-		<li><a href="#">CV</a></li>
-	    </ul>
-	</div>
-    </nav>
+  <!-- Content -->
+  <section id="main" class="main">
+    <div id="main_content" class="main_content">
+      <div id="personal_info" class="personal_info">
+        <img class="photo_perfil" src="assets/photo.jpg" alt="photo" />
+        <h1>Hello everyone!</h1>
+        <h2>I'm Juan Puerta & I'm a Software Engineer</h2>
+        <div id="socials" class="socials">
+          <a href="#">
+            <img class="social_img" src="assets/github.svg" alt="github" />
+          </a>
+          <a href="#">
+            <img class="social_img" src="assets/linkedin.svg" alt="linkedin" />
+          </a>
+        </div>
+      </div>
+      <div id="portafolio_content" class="portafolio_content">
+        <h1># Portafolio Contents</h1>
+        <ul id="list_content" class="list_content">
+          <li>
+            <a href="#about_me">About me</a>
+          </li>
+          <li>
+            <a href="#my_projects">My projects</a>
+          </li>
+          <li>
+            <a href="#">Work experience</a>
+          </li>
+          <li>
+            <a href="#">Download CV</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <!-- Sección HOME -->
-    <section id="home" class="home">
-		<div class="home_content">
-		    <div class="card_content">
-				<img class="perfil" src="assets/photo.jpg" alt="">
-				<div class="info_content">
-				    <h2>
-				        Hey, I am Juan Puerta.
-				    </h2>
-				    <h2>
-						And this is my portafolio web...
-				    </h2>
-				    <div class="socials">
-				        <a href="#">
-							<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="26" height="26" alt="github" />
-				        </a>
-				        <a href="#">
-							<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="26" height="26" alt="linkedin" />
-				        </a>
-				    </div>
-				</div>
-		    </div>
-		    <div class="text_content">
-				<p>
-				    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-		    </div>
-		</div>
-    </section>
+  <!-- About me -->
+  <section id="about_me" class="about_me">
+    <div id="about_content" class="about_content">
+      <h1># About me</h1>
+      <p>Junior Software Engineer with interest in working on any interesting and challenging programming related project. I stand out for my responsibility, attention to detail, analysis and problem solving.</p>
+      <p>I have experience in software development using programming languages such as: Python, Java, JavaScript, C; Web application development using frameworks such as: React, Vue, Django, NodeJS; Management of agile methodologies such as: SCRUM and CRISP-DM; And finally, I have worked in data analytics and artificial intelligence projects using Python.</p>
+    </div>
+  </section>
 
-    <!-- Sección PROJECTS -->
-	<section id="projects" class="projects">
-		<div class="projects_content">
-			<h1>Projects</h1>
-			<div class="projects_list">
-				<div class="project_card">
-					<div class="title">
-						<a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170" target="_blank" rel="noreferrer">
-							<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/c-colored.svg" width="36" height="36" alt="C" />
-						</a>
-						<h4>Snake Game</h4>
-					</div>
-					<p>A simple snake game for the terminal</p>
-					<a href="https://github.com/AlakanMedia/snake_game" target="_blank" rel="noreferrer">
-						View code
-					</a>
-				</div>
-				<div class="project_card">
-					<div class="title">
-						<a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170" target="_blank" rel="noreferrer">
-							<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/c-colored.svg" width="36" height="36" alt="C" />
-						</a>
-						<h4>Ahorcado</h4>
-					</div>
-					<p>The Hangman game in terminal version</p>
-					<a href="https://github.com/AlakanMedia/ahorcado" target="_blank" rel="noreferrer">
-						View code
-					</a>
-				</div>
-				<div class="project_card">
-					<div class="title">
-						<a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170" target="_blank" rel="noreferrer">
-							<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/c-colored.svg" width="36" height="36" alt="C" />
-						</a>
-						<h4>Task List</h4>
-					</div>
-					<p>Todo aplication in the terminal</p>
-					<a href="https://github.com/AlakanMedia/todo_list" target="_blank" rel="noreferrer">
-						View code
-					</a>
-				</div>
-				<div class="project_card">
-					<div class="title">
-						<a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer">
-							<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" />
-						</a>
-						<a href="https://developer.mozilla.org/en-US/docs/Glossary/CSS3" target="_blank" rel="noreferrer">
-							<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="HTML5" />
-						</a>
-						<h4>Portafolio</h4>
-					</div>
-					<p>My website where I have my portfolio</p>
-					<a href="https://github.com/AlakanMedia/AlakanMedia.github.io" target="_blank" rel="noreferrer">
-						View code
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
+  <!-- My projects -->
+  <section id="my_projects" class="my_projects">
+    <div id="projects_content" class="projects_content">
+      <h1># My projects</h1>
+      <div id="project_list" class="project_list">
+        <div class="project_card">
+          <div class="project_name">
+            <h3>## Snake Game</h3>
+            <img class="skills_img" src="assets/c.svg" alt="c" />
+          </div>
+          <p>The sneka game in the terminal!</p>
+          <a class="project_link" href="#">View more</a>
+        </div>
+        <div class="project_card">
+          <div class="project_name">
+            <h3>## Ahorcado</h3>
+            <img class="skills_img" src="assets/c.svg" alt="c" />
+          </div>
+          <p>Hangman game made in C!</p>
+          <a class="project_link" href="#">View more</a>
+        </div>
+        <div class="project_card">
+          <div class="project_name">
+            <h3>## Task List</h3>
+            <img class="skills_img" src="assets/c.svg" alt="c" />
+          </div>
+          <p>A todo aplication for the terminal!</p>
+          <a class="project_link" href="#">View more</a>
+        </div>
+        <div class="project_card">
+          <div class="project_name">
+            <h3>## Portafolio</h3>
+            <img class="skills_img" src="assets/html5.svg" alt="c" />
+            <img class="skills_img" src="assets/css3.svg" alt="c" />
+          </div>
+          <p>My portafoli web's design!</p>
+          <a class="project_link" href="#">View more</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
