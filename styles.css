@@ -31,6 +31,12 @@
 a {
     text-decoration: none;
 }
+
+hr {
+    width: 72%;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+}
 /* ------------------------------------------------------------------------- */
 
 /* Main screen ------------------------------------------------------------- */
@@ -79,12 +85,13 @@ a {
 }
 
 .social_img {
+    height: 22px;
     margin: 0 .2em;
+    transition: 0.4s;
 }
 
-.social_img {
-    width: 22px;
-    height 22px;
+.social_img:hover {
+    transform: scale(1.2);
 }
 
 .portafolio_content {
@@ -234,6 +241,69 @@ a {
 }
 
 .project_card a:hover {
+    color: var(--aqua-light);
+    text-decoration: underline;
+}
+/* ------------------------------------------------------------------------- */
+
+/* Download CV ------------------------------------------------------------- */
+.download_cv {
+    background-size: cover;
+    background-color: var(--bg);
+    height: 100vh;
+    padding: 5% 14%;
+}
+
+.download_content {
+    background-color: var(--bg-darker);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.general_button {
+    padding: 1em;
+    font-weight: bold;
+    background-color: var(--bg-darker);
+    color: var(--fg);
+    border: 2px solid var(--green-light);
+    border-radius: 4px;
+    transition: .4s;
+}
+
+.general_button:hover {
+    cursor: pointer;
+    transform: scale(1.04);
+	box-shadow: 0px 0px 25px 3px rgba(0,0,0,1);
+}
+/* ------------------------------------------------------------------------- */
+
+/* Footer ------------------------------------------------------------------ */
+.footer_content {
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_content p {
+    width: 72%;
+    color: var(--fg);
+    margin: .6em 0;
+    text-align: center;
+}
+
+.footer_content p a{
+    color: var(--blue);
+}
+
+.footer_content p a:hover{
     color: var(--aqua-light);
     text-decoration: underline;
 }
