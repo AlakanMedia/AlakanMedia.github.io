@@ -211,6 +211,8 @@ hr {
     display: grid;
     grid-template-columns: repeat(2, minmax(auto, 1fr));
     gap: 1em;
+    overflow: auto;
+    scrollbar-width: none;
 }
 
 @media (width < 750px) {
@@ -223,10 +225,6 @@ hr {
     border: 2px solid var(--fg);
     border-radius: 2px;
     padding: .6em;
-}
-
-.project_card:hover {
-    transform: scale(1.02);
 }
 
 .project_card .project_name {
