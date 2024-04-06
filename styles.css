@@ -254,6 +254,60 @@ hr {
 }
 /* ------------------------------------------------------------------------- */
 
+/* Work esperience --------------------------------------------------------- */
+.work_experience {
+    background-size: cover;
+    background-color: var(--bg);
+    height: 100vh;
+    padding: 5% 14%;
+}
+
+.experience_content {
+    background-color: var(--bg-darker);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.experience_content h1{
+    text-align: left;
+    width: 100%;
+    color: var(--red-light);
+    margin-bottom: 1em;
+}
+
+.experience_content .experience_list {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.experience_card {
+    border: 2px solid var(--fg);
+    border-radius: 2px;
+    padding: .6em;
+}
+
+.experience_card h3 {
+    color: var(--red-light);
+}
+
+.experience_card h4 {
+    color: var(--blue);
+}
+
+.experience_card p {
+    color: var(--fg);
+}
+/* ------------------------------------------------------------------------- */
+
 /* Download CV ------------------------------------------------------------- */
 .download_cv {
     background-size: cover;
