@@ -47,17 +47,23 @@ hr {
     border: 1px solid var(--gray);
     border-radius: 4px;
 }
-/* ------------------------------------------------------------------------- */
 
-/* Main screen ------------------------------------------------------------- */
-.main {
+.main, 
+.about_me, 
+.my_projects, 
+.work_experience, 
+.download_cv {
     background-size: cover;
     background-color: var(--bg);
     height: 100vh;
     padding: 5% 14%;
 }
 
-.main_content {
+.main_content, 
+.about_content, 
+.projects_content, 
+.experience_content,
+.download_content {
     background-color: var(--bg-darker);
     border-radius: 10px;
     height: 100%;
@@ -65,8 +71,12 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1em;
 }
 
+/* ------------------------------------------------------------------------- */
+
+/* Main screen ------------------------------------------------------------- */
 .personal_info {
     width: 100%;
     padding: 1em;
@@ -106,7 +116,6 @@ hr {
 
 .portafolio_content {
     width: 100%;
-    padding: 1em;
     display: flex;
     flex-direction: column;
 }
@@ -137,25 +146,6 @@ hr {
 /* ------------------------------------------------------------------------- */
 
 /* About me ---------------------------------------------------------------- */
-.about_me {
-    background-size: cover;
-    background-color: var(--bg);
-    height: 100vh;
-    padding: 5% 14%;
-}
-
-.about_content {
-    background-color: var(--bg-darker);
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-}
-
 .about_content h1 {
     text-align: left;
     width: 100%;
@@ -180,25 +170,6 @@ hr {
 /* ------------------------------------------------------------------------- */
 
 /* My projects ------------------------------------------------------------- */
-.my_projects {
-    background-size: cover;
-    background-color: var(--bg);
-    height: 100vh;
-    padding: 5% 14%;
-}
-
-.projects_content {
-    background-color: var(--bg-darker);
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-}
-
 .projects_content h1{
     text-align: left;
     width: 100%;
@@ -255,25 +226,6 @@ hr {
 /* ------------------------------------------------------------------------- */
 
 /* Work esperience --------------------------------------------------------- */
-.work_experience {
-    background-size: cover;
-    background-color: var(--bg);
-    height: 100vh;
-    padding: 5% 14%;
-}
-
-.experience_content {
-    background-color: var(--bg-darker);
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-}
-
 .experience_content h1{
     text-align: left;
     width: 100%;
@@ -309,25 +261,6 @@ hr {
 /* ------------------------------------------------------------------------- */
 
 /* Download CV ------------------------------------------------------------- */
-.download_cv {
-    background-size: cover;
-    background-color: var(--bg);
-    height: 100vh;
-    padding: 5% 14%;
-}
-
-.download_content {
-    background-color: var(--bg-darker);
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-}
-
 .general_button {
     padding: 1em;
     font-weight: bold;
