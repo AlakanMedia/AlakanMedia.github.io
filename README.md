@@ -9,4 +9,4 @@ This website has a minimalist style and is inspired by two designs made by [TheL
 ![image_portafolio](https://github.com/AlakanMedia/AlakanMedia.github.io/blob/main/assets/img_portafolio.png)
 
 ## License
-The [website](https://alakanmedia.github.io/) is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+The [website](https://alakanmedia.github.io/) is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) and the code is [GPLv3](./LICENSE).
