@@ -2,7 +2,7 @@
 
 /* General configuration --------------------------------------------------- */
 :root {
-    /* COLORS */
+    /* COLORS  DARK MODE */
     --bg: #282828;
     --bg-darker: #1d2021;
     --fg: #ebdbb2;
@@ -22,6 +22,29 @@
     --aqua-light: #8ec07c;
 	--orange: #d65d0e;
     --orange-light: #fe8019;
+}
+
+.light_mode {
+    /* COLORS  LIGHT MODE */
+    --bg: #ebdbb2;
+    --bg-darker: #d5c4a1;
+    --fg: #3c3836;
+    --gray: #928374;
+	--gray-light: #7c6f64;
+    --red: #cc241d;
+    --red-light: #9d0006;
+    --green: #98971a;
+    --green-light: #79740e;
+    --yellow: #d79921;
+    --yellow-light: #b57614;
+    --blue: #458588;
+	--blue-light: #076678;
+	--purple: #b16286;
+    --purple-light: #8f3f71;
+	--aqua: #689d6a;
+    --aqua-light: #427b58;
+	--orange: #d65d0e;
+    --orange-light: #af3a03;
 }
 
 * {
@@ -90,6 +113,10 @@ hr {
     border: 4px solid var(--green-light);
     border-radius: 50%;
 	box-shadow: 0px 0px 25px 3px rgba(0,0,0,1);
+}
+
+.photo_perfil:hover{
+    cursor: pointer;
 }
 
 .personal_info h1 {
