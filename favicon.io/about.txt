@@ -1,6 +1,0 @@
-This favicon was generated using the following font:
-
-- Font Title: Chela One
-- Font Author: Copyright (c) 2012, LatinoType (luciano@latinotype.com), with Reserved Font Names 'Chela'
-- Font Source: https://fonts.gstatic.com/s/chelaone/v21/6ae-4KC7Uqgdz_JZdPIy31vWNTMwoQ.ttf
-- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
