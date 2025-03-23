@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
+
+:root {
+    --bg: #282828;
+    --bg-darker: #1d2021;
+    --fg: #ebdbb2;
+    --gray: #928374;
+	--gray-light: #a89984;
+    --red: #cc241d;
+    --red-light: #fb4934;
+    --green: #98971a;
+    --green-light: #b8bb26;
+    --yellow: #d79921;
+    --yellow-light: #fabd2f;
+    --blue: #458588;
+	--blue-light: #83a598;
+	--purple: #b16286;
+    --purple-light: #d3869b;
+	--aqua: #689d6a;
+    --aqua-light: #8ec07c;
+	--orange: #d65d0e;
+    --orange-light: #fe8019;
+    --transparent: rgb(146, 131, 116, 0.4);
+}
+
+.light-mode {
+    --bg: #ebdbb2;
+    --bg-darker: #d5c4a1;
+    --fg: #3c3836;
+    --gray: #928374;
+	--gray-light: #7c6f64;
+    --red: #cc241d;
+    --red-light: #9d0006;
+    --green: #98971a;
+    --green-light: #79740e;
+    --yellow: #d79921;
+    --yellow-light: #b57614;
+    --blue: #458588;
+	--blue-light: #076678;
+	--purple: #b16286;
+    --purple-light: #8f3f71;
+	--aqua: #689d6a;
+    --aqua-light: #427b58;
+	--orange: #d65d0e;
+    --orange-light: #af3a03;
+    --transparent: rgb(146, 131, 116, 0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: "Fira Code", monospace;
+    font-size: 18px;
+}
+
+header {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+a {
+    color: var(--aqua-light);
+}
+
+a:hover {
+    background-color: var(--blue-light);
+    color: var(--bg-darker);
+}
+
+.ph {
+    font-size: 1.5rem;
+}
+
+.p-section {
+    padding: 1rem;
+    max-width: 1200px;
+}
+
+#header-main {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 150px;
+    text-align: center;
+}
+
+.card {
+    background-color: var(--bg-darker);
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+#first-card {
+    display: flex;
+    gap: 1rem;
+}
+
+header,
+#socials,
+.social-button,
+#personal-photo,
+#personal-info,
+#card-download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#socials {
+    gap: 0.5rem;
+}
+
+#socials > a {
+    text-decoration: none;
+}
+
+#socials > a:hover {
+    background: none;
+}
+
+.social-button {
+    border: none;
+    background: none;
+    aspect-ratio: 1 / 1;
+    padding: 4px;
+    border-radius: 50%;
+    color: var(--aqua-light);
+    transition: background-color 0.3s linear;
+}
+
+.social-button:hover {
+    background-color: var(--transparent);
+    cursor: pointer;
+}
+
+#personal-photo {
+    flex: 1;
+}
+
+#personal-photo > button {
+    min-width: 200px;
+    max-width: 400px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 3px solid var(--blue-light);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#personal-photo > button:hover {
+    cursor: pointer;
+}
+
+#img-button > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#personal-info {
+    flex: 3;
+}
+
+.card > h1 {
+    color: var(--red-light);
+    margin-bottom: 1rem;
+}
+
+.list {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.card-list-item {
+    border: 2px solid var(--fg);
+    border-radius: 4px;
+    padding: 0.5rem;
+    transition: border-color 0.3s linear;
+}
+
+.card-list-item:hover {
+    border-color: var(--blue);
+}
+
+.project-card {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 300px;
+}
+
+.project-title {
+    display: flex;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.project-title > p {
+    color: var(--red-light);
+}
+
+.project-title > i {
+    color: var(--green-light);
+}
+
+#experience-list {
+    flex-direction: column;
+}
+
+.experience-card > h3 {
+    color: var(--red-light);
+}
+
+.experience-card > h4 {
+    color: var(--aqua-light);
+}
+
+#button-section {
+    width: 100%;
+}
+
+#download-button {
+    padding: 1rem;
+    border: 2px solid var(--green);
+    border-radius: 4px;
+    background: none;
+    color: var(--fg);
+    font-weight: bold;
+    transition: scale 0.3s ease;
+}
+
+#download-button:hover {
+    scale: 1.05;
+    cursor: pointer;
+}
+
+@media (width <= 650px) {
+    #first-card {
+        flex-direction: column;
+    }
+}
