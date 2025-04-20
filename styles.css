@@ -243,6 +243,10 @@ header,
     width: 100%;
 }
 
+#card-download-button > a:hover {
+    background-color: transparent;
+}
+
 #download-button {
     padding: 1rem;
     border: 2px solid var(--green);
